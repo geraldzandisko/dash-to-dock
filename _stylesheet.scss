@@ -168,9 +168,11 @@ $dock_style_modes: [null, shrink, extended, extended-shrink];
 
             .dash-background {
                 margin: 0;
-                margin-#{$side}: $side_margin;
+                // margin-#{$side}: $side_margin;
+                margin-bottom: 0px;
                 padding: 0;
-                border-radius: $border_radius;
+                // border-radius: $border_radius;
+                border-radius: 12px 12px 0px 0px;
                 spacing: $base_padding;
             }
 
@@ -242,7 +244,8 @@ $dock_style_modes: [null, shrink, extended, extended-shrink];
         &.fixed {
             #dash {
                 .dash-background {
-                    margin-#{opposite($side)}: $fixed_inner_margin;
+                    // margin-#{opposite($side)}: $fixed_inner_margin;
+                    margin-top: 0px;
                 }
 
                 .dash-item-container {
